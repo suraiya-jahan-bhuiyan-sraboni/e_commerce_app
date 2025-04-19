@@ -1,12 +1,12 @@
 import './App.css'
+import { PiShoppingCart } from "react-icons/pi";
 
 function App() {
 
   return (
     <>
-      <div>
-        hello
-      </div>
+      <PiShoppingCart  />
+      <div className='text-red-500'>hello</div>
     </>
   )
 }
