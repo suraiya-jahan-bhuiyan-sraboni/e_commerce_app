@@ -1,11 +1,12 @@
 import { createBrowserRouter} from "react-router";
-import App from "../App";
+import MainLayout from "../pages/MainLayout";
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <MainLayout/>,
     errorElement: <h2>Route not found</h2>
   },
 ]);
