@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router'
-import { RiArrowDropDownLine } from "react-icons/ri";
+import { IoCartOutline } from "react-icons/io5";
+import { FaRegHeart } from "react-icons/fa";
+
 
 const Navbar = () => {
   return (
@@ -18,19 +20,32 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex justify-around">
+      <div className="flex justify-around p-4 items-center w-11/12 mx-auto">
         <div className='text-2xl font-bold '> Exclusive </div>
         <div className="flex gap-6">
           <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/about">About</Link>
         </div>
-        <div>
-          <input
-            type="text"
-            className="outline-none"
-            placeholder="what are you looking for?"
-          />
+        <div className='flex items-center justify-around gap-3'>
+          <label className="input">
+            <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input type="search" required placeholder="Search" />
+          </label>
+          <FaRegHeart className='text-3xl' />
+          <IoCartOutline className='text-4xl' />
+
         </div>
       </div>
     </div>
