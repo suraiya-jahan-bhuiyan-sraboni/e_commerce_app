@@ -5,6 +5,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 const Navbar = () => {
   return (
     <>
+      
       <div className='flex justify-around items-center text-center text-white bg-black'>
         <div className='flex gap-6  items-center p-2'>
           <p className='text-sm'>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
