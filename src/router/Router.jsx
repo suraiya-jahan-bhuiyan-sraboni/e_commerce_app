@@ -1,40 +1,51 @@
-import { createBrowserRouter} from "react-router";
-import MainLayout from "../LayoutComponents/MainLayout";
+import { createBrowserRouter } from "react-router";
+// import MainLayout from "../LayoutComponents/MainLayout";
 import Home from "../pages/Home";
-import About from "../pages/About";
+// import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Signup from "../pages/Signup";
 import Login from "../pages/Login";
+import { lazy } from "react";
+import LazyWrapper from "./LazyWrapper";
+const MainLayout = lazy(() => import("../LayoutComponents/MainLayout"));
+const About = lazy(() => import("../pages/About"));
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<MainLayout/>,
+    element: (
+      <LazyWrapper>
+        <MainLayout />
+      </LazyWrapper>
+    ),
     errorElement: <h2>Route not found</h2>,
-    children:[
+    children: [
       {
-        path:"/",
-        element: <Home/>,
+        path: "/",
+        element: <Home />,
       },
       {
-        path:"/about",
-        element: <About/>
+        path: "/about",
+        element: (
+          <LazyWrapper>
+            <About />
+          </LazyWrapper>
+        ),
       },
       {
-        path:"/contact",
-        element:<Contact/>
+        path: "/contact",
+        element: <Contact />,
       },
       {
-        path:"/signup",
-        element: <Signup/>
+        path: "/signup",
+        element: <Signup />,
       },
       {
-        path:"/login",
-        element:<Login/>,
-      }
-
-    ]
+        path: "/login",
+        element: <Login />,
+      },
+    ],
   },
 ]);
 
-export default router
+export default router;
