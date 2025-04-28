@@ -6,12 +6,14 @@ import { FaRegHeart } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className=''>
-      <div className=' bg-black'>
+    <div className="border-b-2 border-gray-200">
+      <div className=" bg-black">
         <div className="flex justify-center  text-white w-11/12 mx-auto bg-black px-4 py-1 ">
           <small className="flex-1 text-center">
             Summer sale for All Swim Suits And Free Express Delivery - OFF 50%!
-            <Link to="/products" className="text-red-500 font-bold ml-1">Shop Now</Link>
+            <Link to="/products" className="text-red-500 font-bold ml-1">
+              Shop Now
+            </Link>
           </small>
           <select className="text-white bg-black " name="translate" id="">
             <option value="English">English</option>
@@ -20,16 +22,20 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex justify-around p-4 items-center w-11/12 mx-auto">
-        <div className='text-2xl font-bold '> Exclusive </div>
+      <div className="flex justify-between p-4  items-center w-11/12 mx-auto  ">
+        <div className="text-2xl font-bold "> Exclusive </div>
         <div className="flex gap-6">
           <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/about">About</Link>
         </div>
-        <div className='flex items-center justify-around gap-3'>
+        <div className="flex items-center justify-around gap-3">
           <label className="input">
-            <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <svg
+              className="h-[1em] opacity-50"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
               <g
                 strokeLinejoin="round"
                 strokeLinecap="round"
@@ -43,9 +49,8 @@ const Navbar = () => {
             </svg>
             <input type="search" required placeholder="Search" />
           </label>
-          <FaRegHeart className='text-3xl' />
-          <IoCartOutline className='text-4xl' />
-
+          <FaRegHeart className="text-3xl" />
+          <IoCartOutline className="text-4xl" />
         </div>
       </div>
     </div>
