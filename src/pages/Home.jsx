@@ -4,7 +4,10 @@ const Home = () => {
     return <div className="w-11/12 mx-auto px-4 ">
         {/* header */}
         <div>
+            <div>
 
+            </div>
+            
         </div>
         {/* flash sales */}
         <div>
@@ -32,7 +35,7 @@ const Home = () => {
           </div>
           {/* services */}
           <div>
-            
+
           </div>
     </div>;
 };

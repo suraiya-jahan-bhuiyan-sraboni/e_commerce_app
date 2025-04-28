@@ -1,10 +1,8 @@
 import React from 'react'
 
-function HomeSectionHeading() {
+const HomeSectionHeading = () => {
   return (
-    <div>
-
-    </div>
+    <div>HomeSectionHeading</div>
   )
 }
 
