@@ -34,15 +34,27 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <Contact />,
+        element: (
+          <LazyWrapper>
+            <Contact />
+          </LazyWrapper>
+        ),
       },
       {
         path: "/signup",
-        element: <Signup />,
+        element: (
+          <LazyWrapper>
+            <Signup />
+          </LazyWrapper>
+        ),
       },
       {
         path: "/login",
-        element: <Login />,
+        element: (
+          <LazyWrapper>
+            <Login />
+          </LazyWrapper>
+        ),
       },
     ],
   },
