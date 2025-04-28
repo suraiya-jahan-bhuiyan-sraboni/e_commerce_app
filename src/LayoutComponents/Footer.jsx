@@ -13,7 +13,6 @@ const Footer = () => {
   return (
     <div className='bg-black text-white  px-4 pb-2' >
       <div className='w-11/12 mx-auto flex flex-wrap md:flex-nowrap justify-between gap-4 py-14 items-start'>
-
         <div className='flex flex-col gap-2'>
           <h1 className='font-bold text-xl'>Exclusive</h1>
           <h2 className='font-meduim'>Subscribe</h2>
@@ -31,7 +30,7 @@ const Footer = () => {
 
         <div className='flex flex-col gap-2'>
           <h1 className='font-bold text-xl'>Support</h1>
-          <p className='text-sm' >111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</p>
+          <p className='text-sm' >111 Bijoy sarani, Dhaka,<br />  DH 1515, Bangladesh.</p>
           <p className='text-sm'>exclusive@gmail.com</p>
           <p className='text-sm'>+88015-88888-9999</p>
         </div>
