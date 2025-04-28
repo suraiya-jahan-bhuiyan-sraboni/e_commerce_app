@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeSectionHeading from '../components/home components/HomeSectionHeading';
 
 const Home = () => {
     return <div className="w-11/12 mx-auto px-4 ">
@@ -9,6 +10,7 @@ const Home = () => {
             </div>
             
         </div>
+        <HomeSectionHeading title={"Today’s"} name={"Flash Sales"} />
         {/* flash sales */}
         <div>
 
