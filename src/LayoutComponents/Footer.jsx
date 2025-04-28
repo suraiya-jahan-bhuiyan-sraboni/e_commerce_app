@@ -12,7 +12,7 @@ import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className='bg-black text-white  px-4 pb-2' >
-      <div className='w-11/12 mx-auto flex justify-between gap-4 py-14'>
+      <div className='w-11/12 mx-auto flex flex-wrap md:flex-nowrap justify-between gap-4 py-14 items-start'>
 
         <div className='flex flex-col gap-2'>
           <h1 className='font-bold text-xl'>Exclusive</h1>
