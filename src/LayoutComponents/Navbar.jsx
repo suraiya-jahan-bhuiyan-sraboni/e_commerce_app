@@ -6,7 +6,7 @@ import { FaRegHeart } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="border-b-2 border-gray-200">
+    <div className="border-b border-gray-200">
       <div className=" bg-black">
         <div className="flex justify-center  text-white w-11/12 mx-auto bg-black px-4 py-1 ">
           <small className="flex-1 text-center">

@@ -8,7 +8,7 @@ const Home = () => {
     <div className="w-11/12 mx-auto px-4 ">
       {/* header */}
       <div className="flex">
-        <div className=" flex flex-col w-1/4 text-xl gap-1 border-r-2 border-gray-200 pt-8 pr-4 ">
+        <div className=" flex flex-col w-1/4 text-xl gap-1 border-r border-gray-200 pt-8 pr-4 ">
           <div className="flex items-center justify-between  ">
             <Link>Woman’s Fashion </Link>
             <MdKeyboardArrowRight />
