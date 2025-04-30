@@ -9,5 +9,5 @@ const HomeSectionHeading = ({title, name}) => {
     </div>
   )
 }
-
+                  
 export default HomeSectionHeading
