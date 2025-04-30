@@ -1,8 +1,7 @@
 import React from 'react'
-import { NavLink } from 'react-router'
+import { Link, NavLink } from 'react-router'
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
-import './nav.css'
 
 const Navbar = () => {
   return (
@@ -23,7 +22,7 @@ const Navbar = () => {
       </div>
 
       <div className="flex justify-between p-4  items-center w-11/12 mx-auto  ">
-        <div className="text-2xl font-bold "> Exclusive </div>
+        <Link to="/" className="text-2xl font-bold "> Exclusive </Link>
         <div className="flex gap-6">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/contact">Contact</NavLink>

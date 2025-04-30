@@ -1,114 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
+
 import HomeSectionHeading from "../components/home components/HomeSectionHeading";
 import HeaderSliderComponent from "../components/home components/HeaderSliderComponent";
-import { Link, NavLink } from "react-router";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { Link} from "react-router";
+
 import Service from "../components/home components/Service";
+import Sidebar from "../components/home components/Sidebar";
 const Home = () => {
-  //men's dropdown
-  const [isActive1, setIsActive1] = useState(false);
-  const dropdownRef1 = useRef(null);
-  //women's dropdown
-  const [isActive2, setIsActive2] = useState(false);
-  const dropdownRef2 = useRef(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        dropdownRef1.current &&
-        !dropdownRef1.current.contains(event.target)
-      ) {
-        setIsActive1(false);
-      }
-
-      if (
-        dropdownRef2.current &&
-        !dropdownRef2.current.contains(event.target)
-      ) {
-        setIsActive2(false);
-      }
-      console.log("click");
-      
-    };
-
-    document.addEventListener("pointerdown", handleClickOutside);
-    return () =>
-      document.removeEventListener("pointerdown", handleClickOutside);
-  }, []);
 
   return (
     <div className="w-11/12 mx-auto px-4 ">
       {/* header */}
       <div className="flex">
         <div className=" flex flex-col w-1/4 text-[1.2rem] gap-1 border-r border-gray-200 pt-8 pr-4 ">
-          <div ref={dropdownRef1} className="dropdown dropdown-right">
-            <Link
-              onClick={() => setIsActive1(!isActive1)}
-              className={`flex items-center justify-between ${
-                isActive1 ? "text-red-500" : ""
-              }`}
-            >
-              Men’s Fashion <MdKeyboardArrowRight />
-            </Link>
-
-            {isActive1 && (
-              <ul className="dropdown-content text-[1.2rem] menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm ml-1">
-                <li>
-                  <Link>Jeans</Link>
-                </li>
-                <li>
-                  <Link>T-shirt</Link>
-                </li>
-                <li>
-                  <Link>Shirt</Link>
-                </li>
-                <li>
-                  <Link>Panjabi</Link>
-                </li>
-                <li>
-                  <Link>Shoes</Link>
-                </li>
-              </ul>
-            )}
-          </div>
-
-          <div ref={dropdownRef2} className="dropdown dropdown-right">
-            <Link
-              onClick={() => setIsActive2(!isActive2)}
-              className={`flex items-center justify-between ${
-                isActive2 ? "text-red-500" : ""
-              }`}
-            >
-              Woman's Fashion
-              <MdKeyboardArrowRight />
-            </Link>
-
-            {isActive2 && (
-              <ul className="dropdown-content text-[1.2rem] menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm">
-                <li>
-                  <Link>Jeans</Link>
-                </li>
-                <li>
-                  <Link>T-shirt</Link>
-                </li>
-                <li>
-                  <Link>Shirt</Link>
-                </li>
-                <li>
-                  <Link>Shoes</Link>
-                </li>
-              </ul>
-            )}
-          </div>
-          <Link>Electronics</Link>
-          <Link>Home & Lifestyle</Link>
-          <Link>Medicine</Link>
-          <Link>Sports & Outdoor</Link>
-          <Link>Baby’s & Toys</Link>
-          <Link>Groceries & Pets</Link>
-          <Link>Health & Beauty</Link>
+          <Sidebar/>
         </div>
-
         <div className="w-3/4 pt-8 pl-8 ">
           <HeaderSliderComponent />
         </div>
