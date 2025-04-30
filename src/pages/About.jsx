@@ -2,6 +2,7 @@ import React from 'react'
 
 import Service from '../components/home components/Service'
 import SalesCustomer from '../components/about component/SalesCustomer'
+import Employee from '../components/about component/Employee'
 
 const About = () => {
   return (
@@ -20,7 +21,18 @@ const About = () => {
         </div>
 
       </div>
-      <SalesCustomer/>
+      <SalesCustomer />
+      <Employee />
+      <div className='flex justify-center items-center gap-2 '>
+        <span className='p-2 rounded-full bg-gray-300'></span>
+        <span className='p-2 rounded-full bg-gray-300'></span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="none">
+          <circle cx="8" cy="8" r="5" fill="#DB4444" />
+          <circle opacity="0.3" cx="8" cy="8" r="7" stroke="black" stroke-width="2" />
+        </svg>
+        <span className='p-2 rounded-full bg-gray-300'></span>
+        <span className='p-2 rounded-full bg-gray-300'></span>
+      </div>
       <Service></Service>
     </div>
   )
