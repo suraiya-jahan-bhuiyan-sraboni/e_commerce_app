@@ -1,12 +1,13 @@
 import React from 'react'
 
 import Service from '../components/home components/Service'
+import SalesCustomer from '../components/about component/SalesCustomer'
 
 const About = () => {
   return (
     <div>
       <div className='flex flex-col-reverse md:flex-row py-15 gap-4'>
-        <div className='flex flex-col gap-5 md:pl-15 items-start justify-center w-full md:w-[50%]  '>
+        <div className='flex flex-col gap-5 p-4 md:pl-15 items-start justify-center w-full md:w-[50%]  '>
           <h1 className='text-5xl font-semibold' >Our Story</h1>
           <p>Launced in 2015, Exclusive is South Asia’s premier online shopping makterplace with an active
             presense in Bangladesh. Supported by wide range of tailored marketing, data and service solutions,
@@ -19,6 +20,7 @@ const About = () => {
         </div>
 
       </div>
+      <SalesCustomer/>
       <Service></Service>
     </div>
   )
