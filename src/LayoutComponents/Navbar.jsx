@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { NavLink } from 'react-router'
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
-
+import './nav.css'
 
 const Navbar = () => {
   return (
@@ -11,9 +11,9 @@ const Navbar = () => {
         <div className="flex justify-center  text-white w-11/12 mx-auto bg-black px-4 py-1 ">
           <small className="flex-1 text-center">
             Summer sale for All Swim Suits And Free Express Delivery - OFF 50%!
-            <Link to="/products" className="text-red-500 font-bold ml-1">
+            <NavLink to="/products" className="text-red-500 font-bold ml-1">
               Shop Now
-            </Link>
+            </NavLink>
           </small>
           <select className="text-white bg-black " name="translate" id="">
             <option value="English">English</option>
@@ -25,9 +25,9 @@ const Navbar = () => {
       <div className="flex justify-between p-4  items-center w-11/12 mx-auto  ">
         <div className="text-2xl font-bold "> Exclusive </div>
         <div className="flex gap-6">
-          <Link to="/">Home</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/about">About</Link>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/about">About</NavLink>
         </div>
         <div className="flex items-center justify-around gap-3">
           <label className="input">
