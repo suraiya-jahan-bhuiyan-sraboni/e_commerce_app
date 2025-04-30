@@ -3,6 +3,7 @@ import HomeSectionHeading from "../components/home components/HomeSectionHeading
 import HeaderSliderComponent from "../components/home components/HeaderSliderComponent";
 import { Link } from "react-router";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import Service from "../components/home components/Service";
 const Home = () => {
   return (
     <div className="w-11/12 mx-auto px-4 ">
@@ -47,7 +48,9 @@ const Home = () => {
       {/* new arrival */}
       <div></div>
       {/* services */}
-      <div></div>
+      <div>
+        <Service/>
+      </div>
     </div>
   );
 };
