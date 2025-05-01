@@ -27,6 +27,7 @@ const Navbar = () => {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <NavLink to="/about">About</NavLink>
+          <NavLink to="/signup">Sign Up</NavLink>
         </div>
         <div className="flex items-center justify-around gap-3">
           <label className="input">

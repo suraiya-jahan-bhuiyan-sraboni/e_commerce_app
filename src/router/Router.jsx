@@ -9,6 +9,7 @@ import { lazy } from "react";
 import LazyWrapper from "./LazyWrapper";
 const MainLayout = lazy(() => import("../LayoutComponents/MainLayout"));
 const About = lazy(() => import("../pages/About"));
+import _404Error from './../pages/_404Error';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
         <MainLayout />
       </LazyWrapper>
     ),
-    errorElement: <h2>Route not found</h2>,
+    errorElement: <_404Error></_404Error>,
     children: [
       {
         path: "/",

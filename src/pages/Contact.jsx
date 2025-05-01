@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="w-1/3 flex flex-col shadow-sm p-4 ">
           <div className=" flex flex-col gap-2">
             <div className="flex items-center gap-2">
-              <span className="bg-amber-600 p-2 rounded-full  ">
+              <span className="bg-red-500 text-white font-bold p-2 rounded-full  ">
                 <BsTelephone />
               </span>
               Call To Us
@@ -24,7 +24,7 @@ const Contact = () => {
           <div className="divider"></div>
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-2">
-              <span className="bg-amber-600 p-2 rounded-full ">
+              <span className="bg-red-500 text-white font-bold p-2 rounded-full ">
                 <GoMail />
               </span>
               Write To US

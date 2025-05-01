@@ -5,10 +5,10 @@ import { Link } from 'react-router'
 const Login = () => {
   return (
     <div className='flex flex-col lg:flex-row w-full gap-10 items-center md:my-10 '>
-      <div>
-        <img src="src/assets/dl.beatsnoop 1.png" alt="" />
+      <div className='w-full lg:w-[60%]'>
+        <img className='w-full' src="src/assets/dl.beatsnoop 1.png" alt="" />
       </div>
-      <div className="w-full max-w-md p-4 rounded-md sm:p-8 dark:text-gray-800">
+      <div className="w-full max-w-md p-4 rounded-md sm:p-8 dark:text-gray-800 xl:w-11/12 mx-auto">
         <h2 className="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
         <p className="text-sm text-center dark:text-gray-600">Don't have account? 
           <Link to={"/signup"} className="focus:underline hover:underline"> Sign up here</Link>
