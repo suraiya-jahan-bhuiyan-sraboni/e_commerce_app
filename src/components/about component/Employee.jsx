@@ -29,8 +29,8 @@ const Employee = () => {
             {
                 employe.map((person) => {
                     return (
-                        <div key={person.id} className='flex flex-col gap-2'>
-                            <div className='flex w-full justify-end items-center '>
+                        <div key={person.id} className='flex flex-col  gap-2'>
+                            <div className='flex w-full justify-center items-center bg-gray-200 '>
                                 <img className='px-4 pt-4 w-90 h-90 rounded bg-gray-200 object-cover object-top' src={person.img} alt={person.name}/>
                             </div>
                             <h1 className='text-2xl font-semibold'>{person.name}</h1>
