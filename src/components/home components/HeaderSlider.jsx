@@ -4,9 +4,9 @@ import iphone from "../../assets/apple_logo.png";
 import banner from "../../assets/banner.png";
 const HeaderSlider = ({title,desc}) => {
   return (
-    <div className="flex bg-black text-white">
+    <div className="flex bg-black text-white items-center">
       <div className=" flex flex-col gap-3 w-1/2 p-8 justify-center ">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center  gap-2">
           <img src={iphone} alt="img" />
           <p>{title}</p>
         </div>
