@@ -5,6 +5,7 @@ import { Link } from "react-router";
 import Service from "../components/home components/Service";
 import Sidebar from "../components/home components/Sidebar";
 import CountdownTimer from "../components/home components/countdownTimer/CountdownTimer";
+import NewArrival from './../components/home components/new arrivals/NewArrival';
 const Home = () => {
   return (
     <div className="w-11/12 mx-auto px-4 ">
@@ -37,7 +38,9 @@ const Home = () => {
       {/* our products */}
       <div></div>
       {/* new arrival */}
-      <div></div>
+      <div>
+        <NewArrival/>
+      </div>
       {/* services */}
       <div>
         <Service />
