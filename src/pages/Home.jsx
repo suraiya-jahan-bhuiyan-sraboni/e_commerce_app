@@ -4,11 +4,13 @@ import { Link } from "react-router";
 
 import Service from "../components/home components/Service";
 import Sidebar from "../components/home components/Sidebar";
-import CountdownTimer from "../components/home components/countdownTimer/CountdownTimer";
-import NewArrival from './../components/home components/new arrivals/NewArrival';
+import NewArrival from "./../components/home components/new arrivals/NewArrival";
+import FlashSales from "../components/home components/flash sales/FlashSales";
+
 const Home = () => {
   return (
     <div className="w-11/12 mx-auto px-4 ">
+
       {/* header */}
       <div className="flex">
         <div className=" flex flex-col w-1/4 text-[1.2rem] gap-1 border-r border-gray-200 pt-8 pr-4 ">
@@ -21,25 +23,29 @@ const Home = () => {
 
       {/* flash sales */}
       <div className="py-32 ">
-        <div className="flex justify-between ">
-          <HomeSectionHeading title={"Today’s"} name={"Flash Sales"} />
-          <CountdownTimer/>
-        </div>
-        <div className="" >
-          
-        </div>
+        <FlashSales />
       </div>
+
+
       {/* categories */}
       <div></div>
+
+
       {/* best selling prodeucts */}
       <div></div>
+
+
       {/* banner */}
       <div></div>
+
+
       {/* our products */}
       <div></div>
+
+      
       {/* new arrival */}
       <div>
-        <NewArrival/>
+        <NewArrival />
       </div>
       {/* services */}
       <div>
