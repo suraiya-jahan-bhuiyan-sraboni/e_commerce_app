@@ -1,4 +1,36 @@
 import React, { useEffect, useState } from "react";
+// import Countdown from "react-countdown";
+// const Completionist = () => <span>You are good to go!</span>;
+
+// const renderer = ({days,hours, minutes, seconds, completed }) => {
+//   if (completed) {
+//     // Render a completed state
+//     return <Completionist />;
+//   } else {
+//     // Render a countdown
+//     return (
+//       <div className="flex gap-4 text-3xl items-end  ">
+//         <span className="flex flex-col items-center gap-2">
+//           <span>days</span> {days}
+//         </span>
+//         <p>:</p>
+//         <span className="flex flex-col items-center gap-2">
+//           <span>Hours</span>
+//           {hours}
+//         </span>
+//         <p>:</p>
+//         <span className="flex flex-col items-center gap-2">
+//           <span>Minutes</span>
+//           {minutes}
+//         </span>
+//         <p>:</p>
+//         <span className="flex flex-col items-center gap-2">
+//           <span>Seconds</span> {seconds}
+//         </span>
+//       </div>
+//     );
+//   }
+// };
 
 const Timer = ({ targetDate }) => {
   const calculateTimeLeft = () => {
@@ -35,22 +67,28 @@ const Timer = ({ targetDate }) => {
     <div className="flex flex-col items-center">
       <div className="flex space-x-4 text-gray-900 text-3xl font-bold">
         {Object.entries(timeLeft)
-          .map(([unit, value]) => (
-            <div key={unit} className="flex flex-col items-center">
+          .map(([unit, value], index) => (
+            <div key={index} className="flex flex-col items-center">
               <span className="text-sm uppercase font-semibold text-gray-600">
                 {unit}
               </span>
               <span>{value}</span>
             </div>
           ))
-          .reduce((prev, curr) => [
+          .reduce((prev, curr, index) => [
             prev,
-            <small key={curr.key} className="text-red-500 flex items-end pb-1">
+            <small
+              key={`key-${index}`}
+              className="text-red-500 flex items-end pb-1"
+            >
               :
             </small>,
             curr,
           ])}
       </div>
+      {/* <div>
+        <Countdown date={targetDate} renderer={renderer} />
+      </div> */}
     </div>
   );
 };

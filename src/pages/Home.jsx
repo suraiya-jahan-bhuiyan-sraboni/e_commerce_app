@@ -25,6 +25,7 @@ const Home = () => {
           <CountdownTimer/>
         </div>
         <div className="" >
+          
         </div>
       </div>
       {/* categories */}
