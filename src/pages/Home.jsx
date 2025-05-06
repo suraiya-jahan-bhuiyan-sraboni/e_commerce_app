@@ -8,6 +8,7 @@ import NewArrival from "./../components/home components/new arrivals/NewArrival"
 import FlashSales from "../components/home components/flash sales/FlashSales";
 import BrowseCetegory from "../components/home components/Browse cetegory/BrowseCetegory";
 import BestSellingProducts from "../components/best selling component/BestSellingProducts";
+import CategoriesBanner from "../components/category banner/CategoriesBanner";
 
 const Home = () => {
   return (
@@ -42,7 +43,9 @@ const Home = () => {
 
 
       {/* banner */}
-      <div></div>
+      <div className="pb-32">
+        <CategoriesBanner/>
+      </div>
 
 
       {/* our products */}
