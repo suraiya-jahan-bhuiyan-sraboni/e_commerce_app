@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Bread Dry Dog Food",
+    "original_price": 300,
+    "discount_price": 250,
+    "discount_percent": 17,
+    "rating": 5,
+    "reviews": 35,
+    "new": false,
+    "image": "https://example.com/images/product1.png"
+  },
+  {
+    "id": 2,
+    "name": "CANON EOS DSLR Camera",
+    "original_price": 200,
+    "discount_price": 180,
+    "discount_percent": 10,
+    "rating": 4,
+    "reviews": 95,
+    "new": false,
+    "image": "https://example.com/images/product2.png"
+  },
+  {
+    "id": 3,
+    "name": "ASUS ROG Gaming Laptop",
+    "original_price": 520,
+    "discount_price": 450,
+    "discount_percent": 13,
+    "rating": 5,
+    "reviews": 35,
+    "new": false,
+    "image": "https://example.com/images/product3.png"
+  },
+  {
+    "id": 4,
+    "name": "Curology Product Set",
+    "original_price": 500,
+    "discount_price": 450,
+    "discount_percent": 10,
+    "rating": 4,
+    "reviews": 60,
+    "new": false,
+    "image": "https://example.com/images/product4.png"
+  },
+  {
+    "id": 5,
+    "name": "Kids Electric Car",
+    "original_price": 960,
+    "discount_price": 960,
+    "discount_percent": 0,
+    "rating": 5,
+    "reviews": 65,
+    "new": true,
+    "image": "https://example.com/images/product5.png"
+  },
+  {
+    "id": 6,
+    "name": "Jr. Zoom Soccer Cleats",
+    "original_price": 115,
+    "discount_price": 99,
+    "discount_percent": 14,
+    "rating": 5,
+    "reviews": 112,
+    "new": false,
+    "image": "https://example.com/images/product6.png"
+  },
+  {
+    "id": 7,
+    "name": "OPM Shooter USB Gamepad",
+    "original_price": 40,
+    "discount_price": 30,
+    "discount_percent": 25,
+    "rating": 4,
+    "reviews": 79,
+    "new": true,
+    "image": "https://example.com/images/product7.png"
+  },
+  {
+    "id": 8,
+    "name": "Quilted Satin Jacket",
+    "original_price": 200,
+    "discount_price": 180,
+    "discount_percent": 10,
+    "rating": 4,
+    "reviews": 34,
+    "new": false,
+    "image": "https://example.com/images/product8.png"
+  },
+  {
+    "id": 9,
+    "name": "The north coat",
+    "original_price": 320,
+    "discount_price": 260,
+    "discount_percent": 19,
+    "rating": 5,
+    "reviews": 65,
+    "image": "https://example.com/images/product9.png"
+  },
+  {
+    "id": 10,
+    "name": "Gucci duffle bag",
+    "original_price": 1160,
+    "discount_price": 960,
+    "discount_percent": 17,
+    "rating": 4,
+    "reviews": 65,
+    "image": "https://example.com/images/product10.png"
+  },
+  {
+    "id": 11,
+    "name": "RGB liquid CPU Cooler",
+    "original_price": 170,
+    "discount_price": 160,
+    "discount_percent": 6,
+    "rating": 5,
+    "reviews": 65,
+    "image": "https://example.com/images/product11.png"
+  },
+  {
+    "id": 12,
+    "name": "Small BookSelf",
+    "original_price": 360,
+    "discount_price": 360,
+    "discount_percent": 0,
+    "rating": 5,
+    "reviews": 65,
+    "image": "https://example.com/images/product12.png"
+  }
+]

@@ -9,7 +9,7 @@ import game_player_1 from "../assets/game-player 1.png";
 
 const ProductCard = () => {
   return (
-    <div>
+    <div className="group relative">
       <Link to="/all_products" className=" relative flex flex-col gap-2 ">
         <div className=" flex flex-col absolute right-2 top-2 gap-3">
           <span className="p-2 bg-white rounded-full">
@@ -18,7 +18,9 @@ const ProductCard = () => {
           <span className=" p-2 bg-white rounded-full">
             <MdOutlineRemoveRedEye />
           </span>
+          
         </div>
+        <span className="p-1 bg-red-500 absolute top-2 left-2 text-white font-meduim rounded">- 40%</span>
         <div className=" bg-gray-100 flex justify-center items-center py-6 ">
           <img className="" src={game_player_1} alt="" />
         </div>
@@ -27,10 +29,13 @@ const ProductCard = () => {
           <span className="flex gap-3">
             <p>$120</p> <del>$160</del>
           </span>
-          <div>
-            <Rating style={{ maxWidth: 120 }} value={4} readOnly />
+          <div className="flex items-center gap-3">
+            <Rating style={{ maxWidth: 120 }} value={4} readOnly /> <span className="text-gray-500">(12)</span>
           </div>
         </div>
+        <button class="w-full absolute bottom-22 left-1/2 transform -translate-x-1/2 bg-black text-white px-4 py-2  opacity-0 group-hover:opacity-100 transition duration-300">
+          Add to Cart
+        </button>
       </Link>
     </div>
   );
