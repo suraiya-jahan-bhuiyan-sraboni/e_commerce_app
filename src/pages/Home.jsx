@@ -9,6 +9,7 @@ import FlashSales from "../components/home components/flash sales/FlashSales";
 import BrowseCetegory from "../components/home components/Browse cetegory/BrowseCetegory";
 import BestSellingProducts from "../components/best selling component/BestSellingProducts";
 import CategoriesBanner from "../components/category banner/CategoriesBanner";
+import OurProducts from "../components/home components/our products/OurProducts";
 
 const Home = () => {
   return (
@@ -49,7 +50,9 @@ const Home = () => {
 
 
       {/* our products */}
-      <div></div>
+      <div className="pb-32">
+        <OurProducts/>
+      </div>
 
 
       {/* new arrival */}
