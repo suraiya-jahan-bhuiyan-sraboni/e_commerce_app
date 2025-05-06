@@ -6,6 +6,7 @@ import Service from "../components/home components/Service";
 import Sidebar from "../components/home components/Sidebar";
 import NewArrival from "./../components/home components/new arrivals/NewArrival";
 import FlashSales from "../components/home components/flash sales/FlashSales";
+import BrowseCetegory from "../components/home components/Browse cetegory/BrowseCetegory";
 
 const Home = () => {
   return (
@@ -28,7 +29,9 @@ const Home = () => {
 
 
       {/* categories */}
-      <div></div>
+      <div className="py-32 ">
+        <BrowseCetegory/>
+      </div>
 
 
       {/* best selling prodeucts */}
@@ -42,7 +45,7 @@ const Home = () => {
       {/* our products */}
       <div></div>
 
-      
+
       {/* new arrival */}
       <div>
         <NewArrival />
