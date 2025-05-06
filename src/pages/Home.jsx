@@ -26,6 +26,7 @@ const Home = () => {
 
       {/* flash sales */}
       <div className="py-32 ">
+      <div className="py-32 ">
         <FlashSales />
       </div>
 
@@ -49,6 +50,9 @@ const Home = () => {
 
 
       {/* our products */}
+      <div className="pb-32">
+        <OurProducts/>
+      </div>
       <div className="pb-32">
         <OurProducts/>
       </div>
