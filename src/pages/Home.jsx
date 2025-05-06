@@ -7,8 +7,6 @@ import Sidebar from "../components/home components/Sidebar";
 import NewArrival from "./../components/home components/new arrivals/NewArrival";
 import FlashSales from "../components/home components/flash sales/FlashSales";
 import BrowseCetegory from "../components/home components/Browse cetegory/BrowseCetegory";
-import BestSellingProducts from "../components/best selling component/BestSellingProducts";
-import CategoriesBanner from "../components/category banner/CategoriesBanner";
 
 const Home = () => {
   return (
@@ -25,7 +23,7 @@ const Home = () => {
       </div>
 
       {/* flash sales */}
-      <div className="py-32 pb-0 ">
+      <div className="py-32 ">
         <FlashSales />
       </div>
 
@@ -37,15 +35,11 @@ const Home = () => {
 
 
       {/* best selling prodeucts */}
-      <div className="pb-32">
-        <BestSellingProducts/>
-      </div>
+      <div></div>
 
 
       {/* banner */}
-      <div className="pb-32">
-        <CategoriesBanner/>
-      </div>
+      <div></div>
 
 
       {/* our products */}
