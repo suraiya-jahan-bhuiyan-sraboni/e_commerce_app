@@ -43,7 +43,9 @@ const Home = () => {
 
 
       {/* our products */}
-      <div></div>
+      <div className="pb-32">
+        <OurProducts/>
+      </div>
 
 
       {/* new arrival */}
