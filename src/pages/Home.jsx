@@ -23,7 +23,7 @@ const Home = () => {
       </div>
 
       {/* flash sales */}
-      <div className="py-32 ">
+      <div className="py-32 pb-0 ">
         <FlashSales />
       </div>
 
