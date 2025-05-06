@@ -9,6 +9,7 @@ import FlashSales from "../components/home components/flash sales/FlashSales";
 import BrowseCetegory from "../components/home components/Browse cetegory/BrowseCetegory";
 import CategoriesBanner from "../components/home components/category banner/CategoriesBanner";
 import BestSellingProducts from "../components/best selling component/BestSellingProducts";
+import OurProducts from './../components/home components/our products/OurProducts';
 
 const Home = () => {
   return (
@@ -25,38 +26,33 @@ const Home = () => {
       </div>
 
       {/* flash sales */}
-      <div className="py-32 ">
-      <div className="py-32 ">
+      <div className="py-32 pb-0 ">
         <FlashSales />
       </div>
 
 
       {/* categories */}
       <div className="py-32 ">
-        <BrowseCetegory/>
+        <BrowseCetegory />
       </div>
 
 
       {/* best selling prodeucts */}
-      <div>
-        <BestSellingProducts/>
+      <div className="pb-32">
+        <BestSellingProducts />
       </div>
 
 
       {/* banner */}
-      <div>
-        <CategoriesBanner/>
+      <div className="pb-32">
+        <CategoriesBanner />
       </div>
 
 
       {/* our products */}
       <div className="pb-32">
-        <OurProducts/>
+        <OurProducts />
       </div>
-      <div className="pb-32">
-        <OurProducts/>
-      </div>
-
 
       {/* new arrival */}
       <div>
@@ -66,6 +62,7 @@ const Home = () => {
       <div>
         <Service />
       </div>
+
     </div>
   );
 };
