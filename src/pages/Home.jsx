@@ -7,6 +7,8 @@ import Sidebar from "../components/home components/Sidebar";
 import NewArrival from "./../components/home components/new arrivals/NewArrival";
 import FlashSales from "../components/home components/flash sales/FlashSales";
 import BrowseCetegory from "../components/home components/Browse cetegory/BrowseCetegory";
+import CategoriesBanner from "../components/home components/category banner/CategoriesBanner";
+import BestSellingProducts from "../components/best selling component/BestSellingProducts";
 
 const Home = () => {
   return (
@@ -35,11 +37,15 @@ const Home = () => {
 
 
       {/* best selling prodeucts */}
-      <div></div>
+      <div>
+        <BestSellingProducts/>
+      </div>
 
 
       {/* banner */}
-      <div></div>
+      <div>
+        <CategoriesBanner/>
+      </div>
 
 
       {/* our products */}

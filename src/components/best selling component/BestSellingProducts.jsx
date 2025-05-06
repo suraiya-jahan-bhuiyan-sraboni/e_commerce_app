@@ -5,6 +5,7 @@ import ProductCard from '../ProductCard';
 const BestSellingProducts = () => {
     return (
         <div>
+            
             <div className='flex items-end justify-between'>
                 <HomeSectionHeading title={"This Month"} name={"Best Selling Products"} />
                 <button className="flex justify-center items-center py-5 px-10 text-white bg-red-500 rounded-md">

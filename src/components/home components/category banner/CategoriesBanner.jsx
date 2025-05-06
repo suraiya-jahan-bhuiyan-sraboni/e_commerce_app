@@ -1,7 +1,8 @@
 import React from 'react'
 
 const CategoriesBanner = () => {
-  return (
+    return (
+      
       <div className='flex px-15 py-20 justify-between items-center bg-black text-white'>
           <div className='flex flex-col gap-5 items-start'>
               <p className='text-green-400 font-semibold'>Categories</p>
