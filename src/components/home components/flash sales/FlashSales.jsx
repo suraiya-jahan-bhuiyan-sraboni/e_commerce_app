@@ -8,15 +8,22 @@ import ProductCard from '../../ProductCard';
 const FlashSales = () => {
     return (
       <div>
-        <div className="flex justify-between ">
+        <div className="flex flex-col sm:flex-row justify-between ">
           <HomeSectionHeading title={"Today’s"} name={"Flash Sales"} />
           <CountdownTimer />
         </div>
         <div className=" py-4">
           <Swiper
-            slidesPerView={4}
+            
             spaceBetween={12}
             className="mySwiper"
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              500: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              900: { slidesPerView: 4 },
+              1280: { slidesPerView: 5 },
+            }}
           >
             <SwiperSlide> <ProductCard/> </SwiperSlide>
             <SwiperSlide> <ProductCard/> </SwiperSlide>
