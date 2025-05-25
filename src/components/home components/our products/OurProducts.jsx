@@ -7,7 +7,7 @@ const OurProducts = () => {
   return (
     <div >
           <HomeSectionHeading title={"Our Products"} name={"Explore Our Products"} />
-          <div className='grid grid-cols-4 gap-6 mt-10'>
+          <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10'>
               <ProductCard />
               <ProductCard />
               <ProductCard />

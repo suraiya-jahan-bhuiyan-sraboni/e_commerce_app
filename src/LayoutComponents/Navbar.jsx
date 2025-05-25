@@ -2,6 +2,8 @@ import React from 'react'
 import { Link, NavLink } from 'react-router'
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
+import { LuUser } from "react-icons/lu";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   return (
@@ -22,15 +24,24 @@ const Navbar = () => {
       </div>
 
       <div className="flex justify-between p-4  items-center w-11/12 mx-auto  ">
+        <div className="dropdown lg:hidden">
+          <div tabIndex={0} role="button" className="btn m-1"><GiHamburgerMenu /></div>
+          <ul tabIndex={0} className="dropdown-content menu bg-base-100  z-1 w-52 p-2 shadow-sm">
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/contact">Contact</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/signup">Sign Up</NavLink></li>
+          </ul>
+        </div>
         <Link to="/" className="text-2xl font-bold "> Exclusive </Link>
-        <div className="flex gap-6">
+        <div className="hidden lg:flex gap-6">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/signup">Sign Up</NavLink>
         </div>
         <div className="flex items-center justify-around gap-3">
-          <label className="input">
+          <label className="input hidden sm:flex">
             <svg
               className="h-[1em] opacity-50"
               xmlns="http://www.w3.org/2000/svg"
@@ -51,6 +62,17 @@ const Navbar = () => {
           </label>
           <FaRegHeart className="text-3xl" />
           <IoCartOutline className="text-4xl" />
+          <div className="dropdown dropdown-end hidden">
+            <div tabIndex={0} role="button" className=" m-1"><LuUser className='text-2xl hover:text-orange-400  rounded-full'/></div>
+            <ul tabIndex={0} className=" text-white font-semibold dropdown-content menu bg-[#0000000A] backdrop-blur-2xl opacity-[30%] 
+              rounded-box z-10 w-56   p-2 shadow-sm  ">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div>
+          
         </div>
       </div>
     </div>

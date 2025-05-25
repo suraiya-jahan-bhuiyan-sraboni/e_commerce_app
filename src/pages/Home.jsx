@@ -20,7 +20,7 @@ const Home = () => {
         <div className=" flex flex-col w-1/4 text-[1.2rem] gap-1 border-r border-gray-200 pt-8 pr-4 ">
           <Sidebar />
         </div>
-        <div className="w-3/4 pt-8 pl-8 ">
+        <div className="w-3/4 pt-8 pl-8  ">
           <HeaderSliderComponent />
         </div>
       </div>
@@ -32,34 +32,34 @@ const Home = () => {
 
 
       {/* categories */}
-      <div className="py-32 ">
+      <div className="py-32  ">
         <BrowseCetegory />
       </div>
 
 
       {/* best selling prodeucts */}
-      <div className="pb-32">
+      <div className="pb-32 ">
         <BestSellingProducts />
       </div>
 
 
       {/* banner */}
-      <div className="pb-32">
+      <div className="pb-32 ">
         <CategoriesBanner />
       </div>
 
 
       {/* our products */}
-      <div className="pb-32">
+      <div className="pb-32 ">
         <OurProducts />
       </div>
 
       {/* new arrival */}
-      <div>
+      <div className=" ">
         <NewArrival />
       </div>
       {/* services */}
-      <div>
+      <div className=" ">
         <Service />
       </div>
 

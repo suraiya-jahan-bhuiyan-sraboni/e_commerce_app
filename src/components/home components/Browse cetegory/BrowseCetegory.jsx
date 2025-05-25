@@ -11,7 +11,12 @@ const BrowseCetegory = () => {
 
       <div className=" py-4">
         <Swiper
-          slidesPerView={6}
+          breakpoints={{
+            320: { slidesPerView: 2 },
+            500: { slidesPerView: 3 },
+            768: { slidesPerView: 4 },
+            1024: { slidesPerView: 6 },
+          }}
           spaceBetween={25}
           className="mySwiper"
         >

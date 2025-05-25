@@ -3,11 +3,11 @@ import React from 'react'
 const CategoriesBanner = () => {
     return (
       
-      <div className='flex px-15 py-20 justify-between items-center bg-black text-white'>
+      <div className='flex flex-col-reverse md:flex-row gap-4 px-15 py-20 justify-between items-center bg-black text-white'>
           <div className='flex flex-col gap-5 items-start'>
               <p className='text-green-400 font-semibold'>Categories</p>
               <h1 className='text-5xl font-semibold pb-3'>Enhance Your Music Experience</h1>
-              <div className='flex justify-start items-center gap-4'>
+              <div className='flex flex-wrap  justify-start items-center gap-4'>
                   <div className='bg-white w-18 h-18 rounded-full text-black flex flex-col justify-center items-center' >
                       <span className='font-bold'>23</span>
                       <span className=''>hours</span>
