@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="w-11/12 mx-auto px-4">
       <div className='py-4'>
-        <Breadcrumbs />
+        <Breadcrumbs title="About"  />
       </div>
       <div className="flex flex-col-reverse md:flex-row py-15 gap-4">
         <div className="flex flex-col gap-5 md:pr-10 items-start justify-center w-full md:w-1/2 ">

@@ -1,10 +1,27 @@
+// import React from "react";
+// import { Link } from "react-router";
+
+// const Breadcrumbs = ({ title, product }) => {
+//   return (
+//     <div className="text-sm text-gray-600 my-4">
+//       <div className="text-xl">
+//         <Link to="/">Home</Link>
+//         {product && <Link to="/products"> / Products</Link>} /
+//         <span className="text-blue-500 font-semibold">{title}</span>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Breadcrumbs;
+
 import React from "react";
 import { Link, useLocation } from "react-router";
 
 const Breadcrumbs = ({ isNotFound = false }) => {
   const location = useLocation();
   const pathnames = location.pathname.split("/").filter((x) => x);
-  
+
   const formatName = (str) => str.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   return (
     <div className="text-sm text-gray-600 my-4">

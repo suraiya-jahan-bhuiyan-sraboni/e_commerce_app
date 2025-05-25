@@ -6,8 +6,8 @@ const Contact = () => {
   return (
     <div className="w-11/12 mx-auto px-4">
       <div className="py-4">
-        <Breadcrumbs />
-      </div>
+        <Breadcrumbs title="Contact" />
+      </div> 
 
       <div className="flex py-20 gap-6 ">
         <div className="w-1/3 flex flex-col shadow-sm p-4 ">
