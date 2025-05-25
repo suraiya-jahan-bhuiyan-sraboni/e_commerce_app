@@ -14,6 +14,7 @@ import ProductDetails from "../components/ProductDetails";
 import Favourites from "../pages/Favourites";
 import Cart from './../pages/Cart';
 import CheckOut from './../pages/CheckOut';
+import MyAccount from "../pages/MyAccount";
 
 const router = createBrowserRouter([
   {
@@ -83,11 +84,19 @@ const router = createBrowserRouter([
             <Cart />
           </LazyWrapper>
         ),
-      }, {
+      },
+      {
         path: "/checkout",
         element: (
           <LazyWrapper>
             <CheckOut />
+          </LazyWrapper>
+        )
+      }, {
+        path: "/my-account",
+        element: (
+          <LazyWrapper>
+            <MyAccount/>
           </LazyWrapper>
         )
       }
