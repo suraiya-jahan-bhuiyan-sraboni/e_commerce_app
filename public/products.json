@@ -8,7 +8,12 @@
     "rating": 5,
     "reviews": 35,
     "new": false,
-    "image": "https://example.com/images/product1.png"
+    "size": ["S", "M"],
+    "images": [
+      "https://example.com/images/product1.png",
+      "https://example.com/images/product1_alt1.png"
+    ],
+    "colors": ["Brown", "Beige"]
   },
   {
     "id": 2,
@@ -19,7 +24,12 @@
     "rating": 4,
     "reviews": 95,
     "new": false,
-    "image": "https://example.com/images/product2.png"
+    "size": ["One Size"],
+    "images": [
+      "https://example.com/images/product2.png",
+      "https://example.com/images/product2_alt1.png"
+    ],
+    "colors": ["Black"]
   },
   {
     "id": 3,
@@ -30,7 +40,12 @@
     "rating": 5,
     "reviews": 35,
     "new": false,
-    "image": "https://example.com/images/product3.png"
+    "size": ["15-inch", "17-inch"],
+    "images": [
+      "https://example.com/images/product3.png",
+      "https://example.com/images/product3_alt1.png"
+    ],
+    "colors": ["Black", "Gray"]
   },
   {
     "id": 4,
@@ -41,7 +56,12 @@
     "rating": 4,
     "reviews": 60,
     "new": false,
-    "image": "https://example.com/images/product4.png"
+    "size": ["Standard"],
+    "images": [
+      "https://example.com/images/product4.png",
+      "https://example.com/images/product4_alt1.png"
+    ],
+    "colors": ["White", "Blue"]
   },
   {
     "id": 5,
@@ -52,7 +72,12 @@
     "rating": 5,
     "reviews": 65,
     "new": true,
-    "image": "https://example.com/images/product5.png"
+    "size": ["One Size"],
+    "images": [
+      "https://example.com/images/product5.png",
+      "https://example.com/images/product5_alt1.png"
+    ],
+    "colors": ["Red", "Yellow"]
   },
   {
     "id": 6,
@@ -63,7 +88,12 @@
     "rating": 5,
     "reviews": 112,
     "new": false,
-    "image": "https://example.com/images/product6.png"
+    "size": ["6", "7", "8", "9"],
+    "images": [
+      "https://example.com/images/product6.png",
+      "https://example.com/images/product6_alt1.png"
+    ],
+    "colors": ["Black", "White"]
   },
   {
     "id": 7,
@@ -74,7 +104,12 @@
     "rating": 4,
     "reviews": 79,
     "new": true,
-    "image": "https://example.com/images/product7.png"
+    "size": ["Standard"],
+    "images": [
+      "https://example.com/images/product7.png",
+      "https://example.com/images/product7_alt1.png"
+    ],
+    "colors": ["Black", "Red"]
   },
   {
     "id": 8,
@@ -85,7 +120,12 @@
     "rating": 4,
     "reviews": 34,
     "new": false,
-    "image": "https://example.com/images/product8.png"
+    "size": ["M", "L", "XL"],
+    "images": [
+      "https://example.com/images/product8.png",
+      "https://example.com/images/product8_alt1.png"
+    ],
+    "colors": ["Navy", "Gray"]
   },
   {
     "id": 9,
@@ -95,7 +135,12 @@
     "discount_percent": 19,
     "rating": 5,
     "reviews": 65,
-    "image": "https://example.com/images/product9.png"
+    "size": ["M", "L", "XL"],
+    "images": [
+      "https://example.com/images/product9.png",
+      "https://example.com/images/product9_alt1.png"
+    ],
+    "colors": ["Black", "Olive"]
   },
   {
     "id": 10,
@@ -105,7 +150,12 @@
     "discount_percent": 17,
     "rating": 4,
     "reviews": 65,
-    "image": "https://example.com/images/product10.png"
+    "size": ["Large"],
+    "images": [
+      "https://example.com/images/product10.png",
+      "https://example.com/images/product10_alt1.png"
+    ],
+    "colors": ["Brown", "Black"]
   },
   {
     "id": 11,
@@ -115,7 +165,12 @@
     "discount_percent": 6,
     "rating": 5,
     "reviews": 65,
-    "image": "https://example.com/images/product11.png"
+    "size": ["120mm", "240mm"],
+    "images": [
+      "https://example.com/images/product11.png",
+      "https://example.com/images/product11_alt1.png"
+    ],
+    "colors": ["Black", "RGB"]
   },
   {
     "id": 12,
@@ -125,6 +180,11 @@
     "discount_percent": 0,
     "rating": 5,
     "reviews": 65,
-    "image": "https://example.com/images/product12.png"
+    "size": ["Small", "Medium"],
+    "images": [
+      "https://example.com/images/product12.png",
+      "https://example.com/images/product12_alt1.png"
+    ],
+    "colors": ["Brown", "White"]
   }
 ]

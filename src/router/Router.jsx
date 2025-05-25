@@ -10,6 +10,7 @@ import LazyWrapper from "./LazyWrapper";
 const MainLayout = lazy(() => import("../LayoutComponents/MainLayout"));
 const About = lazy(() => import("../pages/About"));
 import _404Error from './../pages/_404Error';
+import ProductDetails from "../components/ProductDetails";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,14 @@ const router = createBrowserRouter([
         element: (
           <LazyWrapper>
             <Login />
+          </LazyWrapper>
+        ),
+      },
+      {
+        path: "/product_details/:id",
+        element: (
+          <LazyWrapper>
+            <ProductDetails/>
           </LazyWrapper>
         ),
       },
