@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { BiReceipt } from 'react-icons/bi';
 import Breadcrumbs from './../components/Breadcrumbs';
+import { Link } from 'react-router';
 
 const Cart = () => {
     const [quantities, setQuantities] = useState({
@@ -106,9 +107,9 @@ const Cart = () => {
                                 <span>Total:</span>
                                 <span>$1750</span>
                             </div>
-                            <button className="w-full bg-red-500 hover:bg-red-600 text-white py-3">
+                            <Link to="/checkout" className="btn w-full bg-red-500 hover:bg-red-600 text-white py-3">
                                 Proceed to checkout
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
