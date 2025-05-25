@@ -14,9 +14,6 @@ const ProductCard2 = () => {
                   <span className="p-2 bg-white rounded-full">
                       <MdDelete />
                   </span>
-                  <span className="p-2 bg-white rounded-full">
-                      <MdOutlineRemoveRedEye />
-                  </span>
               </div>
               <span className="p-1 bg-red-500 absolute top-2 left-2 text-white font-meduim rounded">- 40%</span>
               <div className=" bg-gray-100 flex justify-center items-center py-6 ">
