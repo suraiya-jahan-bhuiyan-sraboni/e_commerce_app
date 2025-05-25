@@ -4,6 +4,8 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaTruckFast } from "react-icons/fa6";
 import { LuUndo2 } from "react-icons/lu";
 import { Link } from "react-router";
+import HomeSectionHeading from "./home components/HomeSectionHeading";
+import ProductCard from "./ProductCard";
 const ProductDetails = () => {
   const [selectedColor, setSelectedColor] = useState("red");
   const [selectedSize, setSelectedSize] = useState("M");
@@ -14,14 +16,15 @@ const ProductDetails = () => {
       <div className="flex w-full py-10">
         <div className="md:w-2/3">pictures</div>
         <div className="md:w-1/3">
-          <section>
+          <section className=" flex flex-col gap-3">
             <h2 className="text-2xl font-bold">Havic HV G-92 Gamepad</h2>
             <p>
               <span>stars</span>
-              <span>(150)</span> | <span>in stock </span>
+              <span>(150)</span> |{" "}
+              <span className="text-green-500">in stock </span>
             </p>
-            <p>$192.00</p>
-            <p>
+            <p className="text-xl font-semibold">$192.00</p>
+            <p className="text-sm">
               PlayStation 5 Controller Skin High quality vinyl with air channel
               adhesive for easy bubble free install & mess free removal Pressure
               sensitive.
@@ -29,9 +32,10 @@ const ProductDetails = () => {
           </section>
           <div className="divider"></div>
 
-          <section className="flex flex-col gap-3 ">
+          <section className="flex flex-col gap-6 ">
             {/* Colours */}
-            <div className="flex space-x-2">
+            <div className="flex space-x-2 items-center">
+              <div className="text-xl font-medium">Colours :</div>
               {["black", "red", "blue"].map((color) => (
                 <button
                   key={color}
@@ -44,8 +48,9 @@ const ProductDetails = () => {
               ))}
             </div>
             {/* Sizes */}
-            <div className="text-sm font-medium">Size:</div>
-            <div className="flex space-x-2">
+            <div className="flex space-x-2 items-center">
+              <div className="text-xl font-medium">Size :</div>
+
               {["XS", "S", "M", "L", "XL"].map((size) => (
                 <button
                   key={size}
@@ -87,7 +92,7 @@ const ProductDetails = () => {
 
           <section className="mt-8">
             <div className="border rounded">
-              <div className="flex items-start gap-3 p-3">
+              <div className="flex items-start gap-3 p-6">
                 <FaTruckFast className="w-8 h-8 mt-2 " />
                 <div>
                   <p className="font-medium">Free Delivery</p>
@@ -97,7 +102,7 @@ const ProductDetails = () => {
                 </div>
               </div>
               <hr />
-              <div className="flex items-center gap-3 p-3">
+              <div className="flex items-center gap-3 p-6">
                 <LuUndo2 className="w-6 h-6 mt-2" />
                 <div>
                   <p className="font-medium">Return Delivery</p>
@@ -111,7 +116,15 @@ const ProductDetails = () => {
           </section>
         </div>
       </div>
-      <div></div>
+      <div className="">
+          <HomeSectionHeading title="Related items" />
+        <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 items-center justify-around gap-4 py-10">
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </div>
+      </div>
     </div>
   );
 };
