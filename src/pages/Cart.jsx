@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { BiReceipt } from 'react-icons/bi';
+import Breadcrumbs from './../components/Breadcrumbs';
 
 const Cart = () => {
     const [quantities, setQuantities] = useState({
@@ -14,6 +16,7 @@ const Cart = () => {
     return (
         <div className='min-h-screen'>
             <div className="p-8 max-w-6xl mx-auto">
+                <Breadcrumbs />
                 <div className="overflow-x-auto">
                     <table className="table w-full border-separate border-spacing-y-4">
                         <thead className='shadow-xs '>
