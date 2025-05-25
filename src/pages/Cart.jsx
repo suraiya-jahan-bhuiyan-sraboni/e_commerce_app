@@ -16,7 +16,7 @@ const Cart = () => {
             <div className="p-8 max-w-6xl mx-auto">
                 <div className="overflow-x-auto">
                     <table className="table w-full border-separate border-spacing-y-4">
-                        <thead className='shadow-md '>
+                        <thead className='shadow-xs '>
                             <tr >
                                 <th>Product</th>
                                 <th>Price</th>
@@ -25,7 +25,7 @@ const Cart = () => {
                             </tr>
                         </thead>
                         <tbody className=''>
-                            <tr className='shadow-md'>
+                            <tr className='shadow-xs'>
                                 <td className="flex items-center gap-3 flex-wrap">
                                     <img
                                         src="src/assets/monitor.png"
@@ -47,7 +47,7 @@ const Cart = () => {
                                 </td>
                                 <td>$650</td>
                             </tr>
-                            <tr className='shadow-md'>
+                            <tr className='shadow-xs'>
                                 <td className="flex items-center gap-3 flex-wrap">
                                     <img
                                         src="src/assets/game-player 1.png"
