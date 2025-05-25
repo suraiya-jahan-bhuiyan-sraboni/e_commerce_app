@@ -27,7 +27,7 @@ const ProductCard = () => {
         <div className="p-3">
           <h3>HAVIT HV-G92 Gamepad</h3>
           <span className="flex gap-3">
-            <p>$120</p> <del>$160</del>
+            <p className="text-red-500">$120</p> <del>$160</del>
           </span>
           <div className="flex items-center gap-3">
             <Rating style={{ maxWidth: 120 }} value={4} readOnly /> <span className="text-gray-500">(12)</span>

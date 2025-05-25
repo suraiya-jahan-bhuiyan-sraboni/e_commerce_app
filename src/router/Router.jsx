@@ -11,6 +11,7 @@ const MainLayout = lazy(() => import("../LayoutComponents/MainLayout"));
 const About = lazy(() => import("../pages/About"));
 import _404Error from './../pages/_404Error';
 import ProductDetails from "../components/ProductDetails";
+import Favourites from "../pages/Favourites";
 
 const router = createBrowserRouter([
   {
@@ -66,6 +67,14 @@ const router = createBrowserRouter([
           </LazyWrapper>
         ),
       },
+      {
+        path:"/favourites",
+        element: (
+          <LazyWrapper>
+            <Favourites />
+          </LazyWrapper>
+        ),
+      }
     ],
   },
 ]);

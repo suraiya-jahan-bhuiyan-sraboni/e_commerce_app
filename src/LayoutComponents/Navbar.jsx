@@ -60,7 +60,9 @@ const Navbar = () => {
             </svg>
             <input type="search" required placeholder="Search" />
           </label>
-          <FaRegHeart className="text-3xl" />
+          <Link to="/favourites" className="hidden sm:flex">
+            <FaRegHeart className="text-xl" />
+          </Link>
           <IoCartOutline className="text-4xl" />
           <div className="dropdown dropdown-end hidden">
             <div tabIndex={0} role="button" className=" m-1"><LuUser className='text-2xl hover:text-orange-400  rounded-full'/></div>
