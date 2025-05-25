@@ -16,7 +16,7 @@ const Navbar = () => {
               Shop Now
             </NavLink>
           </small>
-          <select className="text-white bg-black " name="translate" id="">
+          <select className="text-white bg-black hidden sm:block " name="translate" id="">
             <option value="English">English</option>
             <option value="Bangla">Bangla</option>
           </select>
@@ -60,10 +60,13 @@ const Navbar = () => {
             </svg>
             <input type="search" required placeholder="Search" />
           </label>
-          <Link to="/favourites" className="hidden sm:flex">
+          <Link to="/favourites" className="">
             <FaRegHeart className="text-xl" />
           </Link>
-          <IoCartOutline className="text-4xl" />
+          <Link to="/cart" className="">
+            <IoCartOutline className="text-2xl" />
+          </Link>
+          
           <div className="dropdown dropdown-end hidden">
             <div tabIndex={0} role="button" className=" m-1"><LuUser className='text-2xl hover:text-orange-400  rounded-full'/></div>
             <ul tabIndex={0} className=" text-white font-semibold dropdown-content menu bg-[#0000000A] backdrop-blur-2xl opacity-[30%] 

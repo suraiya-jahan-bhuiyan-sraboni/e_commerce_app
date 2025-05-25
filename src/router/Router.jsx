@@ -12,6 +12,7 @@ const About = lazy(() => import("../pages/About"));
 import _404Error from './../pages/_404Error';
 import ProductDetails from "../components/ProductDetails";
 import Favourites from "../pages/Favourites";
+import Cart from './../pages/Cart';
 
 const router = createBrowserRouter([
   {
@@ -72,6 +73,13 @@ const router = createBrowserRouter([
         element: (
           <LazyWrapper>
             <Favourites />
+          </LazyWrapper>
+        ),
+      }, {
+        path: "/cart",
+        element: (
+          <LazyWrapper>
+            <Cart />
           </LazyWrapper>
         ),
       }
