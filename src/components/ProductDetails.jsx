@@ -3,6 +3,7 @@ import Breadcrumbs from "./Breadcrumbs";
 import { FaRegHeart } from "react-icons/fa";
 import { FaTruckFast } from "react-icons/fa6";
 import { LuUndo2 } from "react-icons/lu";
+import { Link } from "react-router";
 const ProductDetails = () => {
   const [selectedColor, setSelectedColor] = useState("red");
   const [selectedSize, setSelectedSize] = useState("M");
@@ -84,25 +85,25 @@ const ProductDetails = () => {
             </div>
           </section>
 
-          <section>
-            <div className="border rounded  space-y-4">
+          <section className="mt-8">
+            <div className="border rounded">
               <div className="flex items-start gap-3 p-3">
                 <FaTruckFast className="w-8 h-8 mt-2 " />
                 <div>
                   <p className="font-medium">Free Delivery</p>
-                  <p className="text-sm text-gray-600">
+                  <Link className="text-sm text-gray-600">
                     Enter your postal code for Delivery Availability
-                  </p>
+                  </Link>
                 </div>
               </div>
               <hr />
-              <div className="flex items-start space-x-3">
-               <LuUndo2  className="w-6 h-6 mt-2" />
+              <div className="flex items-center gap-3 p-3">
+                <LuUndo2 className="w-6 h-6 mt-2" />
                 <div>
                   <p className="font-medium">Return Delivery</p>
                   <p className="text-sm text-gray-600">
                     Free 30 Days Delivery Returns.
-                    <span className="underline cursor-pointer">Details</span>
+                    <Link className="underline cursor-pointer">Details</Link>
                   </p>
                 </div>
               </div>
