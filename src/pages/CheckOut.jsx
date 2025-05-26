@@ -1,6 +1,5 @@
 import React from 'react'
 import Breadcrumbs from '../components/Breadcrumbs'
-import Checkout from './../components/Checkout';
 
 const CheckOut = () => {
     return (
