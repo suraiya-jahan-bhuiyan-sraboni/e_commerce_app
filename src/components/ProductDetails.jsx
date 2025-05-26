@@ -14,6 +14,8 @@ import img5 from "../assets/image 57.png";
 import img6 from "../assets/portrait-two-african-females.png"
 import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/styles.min.css";
+import { Rating } from "@smastrom/react-rating";
+import "@smastrom/react-rating/style.css";
 const images = [img1, img2, img3, img4,img5, img6];
 
 const ProductDetails = () => {
@@ -57,10 +59,9 @@ const ProductDetails = () => {
         <div className="md:w-1/3">
           <section className=" flex flex-col gap-3">
             <h2 className="text-2xl font-bold">Havic HV G-92 Gamepad</h2>
-            <p>
-              <span>stars</span>
-              <span>(150)</span> |
-              <span className="text-green-500">in stock </span>
+            <p className="flex gap-2 text-md">
+               <Rating style={{ maxWidth: 110 }} value={4} readOnly /> <span className="text-gray-500 font-semibold "> (12)</span> |
+              <span className="text-green-500"> in stock </span>
             </p>
             <p className="text-xl font-semibold">$192.00</p>
             <p className="text-sm">
