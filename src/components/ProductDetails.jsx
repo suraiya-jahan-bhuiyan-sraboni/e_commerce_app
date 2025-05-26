@@ -6,32 +6,52 @@ import { LuUndo2 } from "react-icons/lu";
 import { Link } from "react-router";
 import HomeSectionHeading from "./home components/HomeSectionHeading";
 import ProductCard from "./ProductCard";
-import img1 from "../assets/image 57.png";
+import img1 from "../assets/image 63.png";
 import img2 from "../assets/image 58.png";
 import img3 from "../assets/image 59.png";
 import img4 from "../assets/image 61.png";
-import img5 from "../assets/image 63.png";
+import img5 from "../assets/image 57.png";
+import img6 from "../assets/portrait-two-african-females.png"
+import InnerImageZoom from "react-inner-image-zoom";
+import "react-inner-image-zoom/lib/styles.min.css";
+const images = [img1, img2, img3, img4,img5, img6];
 
 const ProductDetails = () => {
   const [selectedColor, setSelectedColor] = useState("red");
   const [selectedSize, setSelectedSize] = useState("M");
   const [quantity, setQuantity] = useState(2);
-  // const [image,setImage] = useState('');
+  const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
     <div className="w-11/12 mx-auto px-4">
       <Breadcrumbs title="Havic HV G-92 Gamepad" product />
-      <div className="flex w-full py-10 gap-10">
+      <div className="md:flex w-full py-10 gap-10">
         <div className="md:w-2/3  flex gap-6 ">
-          <div className="w-1/5 flex flex-col justify-between ">
-            {[img1, img2, img3, img4].map((itm) => (
-              <div className=" bg-gray-100 flex justify-center items-center p-3  ">
-                <img src={itm} alt="" />
+          <div className="no-scrollbar w-1/5 flex flex-col gap-3 overflow-y-scroll scrollbar-none max-h-150 ">
+            {images.map((itm, idx) => (
+              <div
+                key={idx}
+                onClick={() => setSelectedImage(itm)}
+                className={` bg-gray-100 flex justify-center items-center object-contain cursor-pointer border-2 rounded-lg transition-all duration-200 p-2 ${
+                  selectedImage === itm
+                    ? "border-blue-500"
+                    : "border-transparent"
+                } `}
+              >
+                <img src={itm} className="h-20 w-20" alt="" />
               </div>
             ))}
           </div>
-          <div className=" w-4/5 bg-gray-100 flex items-center justify-center ">
-            <img src={img5} alt="" />
+          <div className=" w-4/5  bg-gray-100 flex items-center justify-center p-10 ">
+            <div className="w-[80%] mx-auto">
+              <InnerImageZoom
+                hideHint="false"
+                zoomScale={1}
+                zoomType="hover"
+                zoomPreload={true}
+                src={selectedImage}
+              />
+            </div>
           </div>
         </div>
         <div className="md:w-1/3">
@@ -39,7 +59,7 @@ const ProductDetails = () => {
             <h2 className="text-2xl font-bold">Havic HV G-92 Gamepad</h2>
             <p>
               <span>stars</span>
-              <span>(150)</span> |{" "}
+              <span>(150)</span> |
               <span className="text-green-500">in stock </span>
             </p>
             <p className="text-xl font-semibold">$192.00</p>
