@@ -15,6 +15,7 @@ import Favourites from "../pages/Favourites";
 import Cart from './../pages/Cart';
 import CheckOut from './../pages/CheckOut';
 import MyAccount from "../pages/MyAccount";
+import Allproducts from "../components/allProducts/Allproducts";
 
 const router = createBrowserRouter([
   {
@@ -64,21 +65,31 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/product_details/:id",
+        path: "/allproducts",
         element: (
           <LazyWrapper>
-            <ProductDetails/>
+            <Allproducts />
+          </LazyWrapper>
+        ),
+      },
+
+      {
+        path: "/product-details/:id",
+        element: (
+          <LazyWrapper>
+            <ProductDetails />
           </LazyWrapper>
         ),
       },
       {
-        path:"/favourites",
+        path: "/favourites",
         element: (
           <LazyWrapper>
             <Favourites />
           </LazyWrapper>
         ),
-      }, {
+      },
+      {
         path: "/cart",
         element: (
           <LazyWrapper>
@@ -92,15 +103,16 @@ const router = createBrowserRouter([
           <LazyWrapper>
             <CheckOut />
           </LazyWrapper>
-        )
-      }, {
+        ),
+      },
+      {
         path: "/my-account",
         element: (
           <LazyWrapper>
-            <MyAccount/>
+            <MyAccount />
           </LazyWrapper>
-        )
-      }
+        ),
+      },
     ],
   },
 ]);

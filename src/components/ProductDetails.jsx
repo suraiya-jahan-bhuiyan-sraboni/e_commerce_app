@@ -6,15 +6,34 @@ import { LuUndo2 } from "react-icons/lu";
 import { Link } from "react-router";
 import HomeSectionHeading from "./home components/HomeSectionHeading";
 import ProductCard from "./ProductCard";
+import img1 from "../assets/image 57.png";
+import img2 from "../assets/image 58.png";
+import img3 from "../assets/image 59.png";
+import img4 from "../assets/image 61.png";
+import img5 from "../assets/image 63.png";
+
 const ProductDetails = () => {
   const [selectedColor, setSelectedColor] = useState("red");
   const [selectedSize, setSelectedSize] = useState("M");
   const [quantity, setQuantity] = useState(2);
+  // const [image,setImage] = useState('');
+
   return (
     <div className="w-11/12 mx-auto px-4">
       <Breadcrumbs title="Havic HV G-92 Gamepad" product />
-      <div className="flex w-full py-10">
-        <div className="md:w-2/3">pictures</div>
+      <div className="flex w-full py-10 gap-10">
+        <div className="md:w-2/3  flex gap-6 ">
+          <div className="w-1/5 flex flex-col justify-between ">
+            {[img1, img2, img3, img4].map((itm) => (
+              <div className=" bg-gray-100 flex justify-center items-center p-3  ">
+                <img src={itm} alt="" />
+              </div>
+            ))}
+          </div>
+          <div className=" w-4/5 bg-gray-100 flex items-center justify-center ">
+            <img src={img5} alt="" />
+          </div>
+        </div>
         <div className="md:w-1/3">
           <section className=" flex flex-col gap-3">
             <h2 className="text-2xl font-bold">Havic HV G-92 Gamepad</h2>
@@ -117,7 +136,7 @@ const ProductDetails = () => {
         </div>
       </div>
       <div className="">
-          <HomeSectionHeading title="Related items" />
+        <HomeSectionHeading title="Related items" />
         <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 items-center justify-around gap-4 py-10">
           <ProductCard />
           <ProductCard />
