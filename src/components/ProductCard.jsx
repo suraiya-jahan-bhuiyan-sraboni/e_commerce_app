@@ -10,7 +10,7 @@ import game_player_1 from "../assets/game-player 1.png";
 const ProductCard = () => {
   return (
     <div className="w-full group relative">
-      <Link to="/all_products" className=" relative flex flex-col gap-2 ">
+      <Link to="/allproducts" className=" relative flex flex-col gap-2 ">
         <div className=" flex flex-col absolute right-2 top-2 gap-3">
           <span className="p-2 bg-white rounded-full">
             <FaRegHeart />
