@@ -72,13 +72,13 @@ const Allproducts = () => {
           <div className="flex justify-between items-center mb-4">
             <div className="flex items-center gap-2">
 
-              <div className="dropdown dropdown-start">
-                <div tabIndex={0} role="button" className="btn flex btn-square btn-sm text-2xl sm:hidden"><IoFilter /></div>
-                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+              <div className="dropdown dropdown-start sm:hidden ">
+                <div tabIndex={0} role="button" className="btn flex btn-square btn-sm text-2xl "><IoFilter /></div>
+                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-60 p-4 shadow-sm">
                   {/* dropdown filter */}
-                  <div className="bg-base-100  rounded-lg space-y-6">
+                  <div className="rounded-lg space-y-6">
                     {/* Categories */}
-                    <div className='shadow p-4'>
+                    <div className='shadow p-4 bg-base-200'>
                       <h2 className="font-semibold text-lg mb-2">Categories</h2>
                       <ul className="space-y-1">
                         {categories.map((category) => (
@@ -91,7 +91,7 @@ const Allproducts = () => {
                     </div>
 
                     {/* Brands */}
-                    <div className='shadow p-4'>
+                    <div className='shadow p-4 bg-base-200'>
                       <h2 className="font-semibold text-lg mb-2">Brands</h2>
                       <div className="form-control space-y-1 flex flex-col text-xs">
                         {brands.map((brand) => (
@@ -104,7 +104,7 @@ const Allproducts = () => {
                     </div>
 
                     {/* Colors */}
-                    <div className='shadow p-4'>
+                    <div className='shadow p-4 bg-base-200'>
                       <h2 className="font-semibold text-lg mb-2">Colors</h2>
                       <div className="flex flex-wrap gap-2">
                         {colors.map((color, index) => (
@@ -117,7 +117,7 @@ const Allproducts = () => {
                     </div>
 
                     {/* Price Range */}
-                    <div className='shadow p-4'>
+                    <div className='shadow p-4 bg-base-200'>
                       <h2 className="font-semibold text-lg mb-2">Price Range</h2>
                       <input type="number" placeholder="Min Price" className="input input-bordered input-sm mb-2 w-full" />
                       <input type="number" placeholder="Max Price" className="input input-bordered input-sm w-full" />
