@@ -15,7 +15,7 @@ import Favourites from "../pages/Favourites";
 import Cart from './../pages/Cart';
 import CheckOut from './../pages/CheckOut';
 import MyAccount from "../pages/MyAccount";
-import Allproducts from "../components/allProducts/Allproducts";
+import Allproducts from "../pages/Allproducts";
 
 const router = createBrowserRouter([
   {
